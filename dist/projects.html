@@ -38,21 +38,31 @@
                 grid-gap: 5px;  
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
                 grid-template-rows: repeat(2, 100px);  
+                margin-top: 10%;
+                margin-left: 10%;
             }
-            .ProjectOne{
-               opacity: 0.9;
+            .ProjectOne
+            {
+                opacity: 1;
+                transition: 0.5s;
                 transition: 0.7s;
+                width: 200px;
+                height: 200px;
             }
             .ProjectOne:hover{
                 opacity: 1;
                 transition: 0.5s;
                 box-shadow: 0px 0px 100px 50px red;
                 transition: 0.7s;
+                
             }
             .ProjectTwo{
 
-               opacity: 0.9;
+                opacity: 1;
+                transition: 0.5s;
                 transition: 0.7s;
+                width: 200px;
+                height: 200px;
             }
             .ProjectTwo:hover{
                 opacity: 1;
@@ -63,8 +73,11 @@
           
             .ProjectThree{
 
-               opacity: 0.9;
+                opacity: 1;
+                transition: 0.5s;
                 transition: 0.7s;
+                width: 200px;
+                height: 200px;
             }
             .ProjectThree:hover{
                 opacity: 1;
@@ -194,15 +207,15 @@
                     </div>
                 </nav>
                 <div class='Projects'>
-                    <div class='ProjectOne'>
+                    <div class='ProjectOne col-xs-4'>
                         <a href='https://github.com/GoofyGalaxy374/WebStore-FrontEnd'><img srcset='static/project.svg'></a>
                         <p style='color:white; font-size: 20px'>An online store front-end</p>
                     </div>
-                    <div class='ProjectTwo'>
+                    <div class='ProjectTwo col-xs-4'>
                         <a href='https://github.com/GoofyGalaxy374/A-book-catalogue'><img srcset='static/project.svg'></a>
                         <p style='color:white; font-size: 20px'>A book "tinder"</p>
                     </div>
-                    <div class='ProjectThree'>
+                    <div class='ProjectThree col-xs-4'>
                         <a href='https://github.com/GoofyGalaxy374/ToDo-App'><img srcset='static/project.svg'></a>
                         <p style='color:white; font-size: 20px'>A To-Do List manager</p>
                         
