@@ -31,14 +31,16 @@
             {
                 transition: 0.65s;
                 box-shadow: 0px 2px 0px #888888;
-            }  
+            } 
+            .Projects
+            {
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+                margin-left: 110px;
+            }
             .ProjectOne{
-               width: 190px;
-               height: 190px;
                opacity: 0.9;
                 margin-top: 150px;
-                margin-left: 190px;
-                display: inline-block;
                 transition: 0.7s;
             }
             .ProjectOne:hover{
@@ -48,12 +50,9 @@
                 transition: 0.7s;
             }
             .ProjectTwo{
-               width: 190px;
-               height: 190px;
+
                opacity: 0.9;
                 margin-top: 150px;
-                margin-left: 190px;
-                display: inline-block;
                 transition: 0.7s;
             }
             .ProjectTwo:hover{
@@ -64,12 +63,9 @@
             }
           
             .ProjectThree{
-               width: 190px;
-               height: 190px;
+
                opacity: 0.9;
                 margin-top: 150px;
-                margin-left: 190px;
-                display: inline-block;
                 transition: 0.7s;
             }
             .ProjectThree:hover{
@@ -199,20 +195,22 @@
                         </ul>
                     </div>
                 </nav>
-                
-                <div class='ProjectOne col-sm-2'>
-                   <a href='https://github.com/GoofyGalaxy374/WebStore-FrontEnd'><img srcset='static/project.svg'></a>
-                   <p style='color:white; font-size: 20px'>An online store front-end</p>
+                <div class='Projects'>
+                    <div class='ProjectOne'>
+                        <a href='https://github.com/GoofyGalaxy374/WebStore-FrontEnd'><img srcset='static/project.svg'></a>
+                        <p style='color:white; font-size: 20px'>An online store front-end</p>
+                    </div>
+                    <div class='ProjectTwo'>
+                        <a href='https://github.com/GoofyGalaxy374/A-book-catalogue'><img srcset='static/project.svg'></a>
+                        <p style='color:white; font-size: 20px'>A book "tinder"</p>
+                    </div>
+                    <div class='ProjectThree'>
+                        <a href='https://github.com/GoofyGalaxy374/ToDo-App'><img srcset='static/project.svg'></a>
+                        <p style='color:white; font-size: 20px'>A To-Do List manager</p>
+                        
+                    </div>
                 </div>
-                <div class='ProjectTwo col-sm-2'>
-                    <a href='https://github.com/GoofyGalaxy374/A-book-catalogue'><img srcset='static/project.svg'></a>
-                    <p style='color:white; font-size: 20px'>A book "tinder"</p>
-                 </div>
-                 <div class='ProjectThree col-sm-2'>
-                    <a href='https://github.com/GoofyGalaxy374/ToDo-App'><img srcset='static/project.svg'></a>
-                    <p style='color:white; font-size: 20px'>A To-Do List manager</p>
-                    
-                 </div>
+                
             
                  
             </div>
