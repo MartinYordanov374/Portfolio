@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <style>
+            body, html
+            {
+                width: 100%;
+                height: 100%;
+            }
+            .background
+            {
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('static/Background_1.jpg');
+                height: 100%;
+                background-position: absolute;
+                background-repeat: none;
+                background-size: cover;
+            }
+            .nav-link:hover
+            {
+                transition: 0.6s;
+                box-shadow: 0px 2px 0px;
+            }
+            .navbar-brand:hover
+            {
+                transition: 0.65s;
+                box-shadow: 0px 2px 0px #888888;
+            }  
+            .ProjectOne{
+               width: 190px;
+               height: 190px;
+               opacity: 0.9;
+                margin-top: 150px;
+                margin-left: 190px;
+                display: inline-block;
+                transition: 0.7s;
+            }
+            .ProjectOne:hover{
+                opacity: 1;
+                transition: 0.5s;
+                box-shadow: 0px 0px 100px 50px red;
+                transition: 0.7s;
+            }
+            .ProjectTwo{
+               width: 190px;
+               height: 190px;
+               opacity: 0.9;
+                margin-top: 150px;
+                margin-left: 190px;
+                display: inline-block;
+                transition: 0.7s;
+            }
+            .ProjectTwo:hover{
+                opacity: 1;
+                transition: 0.5s;
+                box-shadow: 0px 0px 100px 50px green;
+                transition: 0.7s;
+            }
+          
+            .ProjectThree{
+               width: 190px;
+               height: 190px;
+               opacity: 0.9;
+                margin-top: 150px;
+                margin-left: 190px;
+                display: inline-block;
+                transition: 0.7s;
+            }
+            .ProjectThree:hover{
+                opacity: 1;
+                transition: 0.5s;
+                box-shadow: 0px 0px 100px 50px blue;
+                transition: 0.7s;
+            }
+            .footer
+            {
+                background-color: #303036;
+                width: 100%;
+                position: absolute;
+                overflow: hidden;
+                
+            }
+            .footer-content{
+                color:white;
+                margin-top: 10px;
+                margin-left: 25px;
+            }
+            .footer-about{
+                color:white;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            .footer-bottom{
+                background-color: gray;
+                text-align: center;
+                color: white;
+                font-style:oblique;
+                height: auto;
+            }
+            .footer-links
+            {
+                color:white;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            .footer-links .Credits
+            {
+                color: springgreen;
+                opacity: 0.8;
+                transition: linear 0.6s;
+                text-decoration: none;
+            }
+            .footer-links .Credits:hover
+            {
+                color: springgreen;
+                opacity: 1;
+                transition: linear 0.6s;
+            }
+            #Github_Links
+            {
+                color: orange;
+                transition: linear 0.6s;
+            }
+            #Github_Links:hover
+            {
+                transition: linear 0.6s;
+                color: yellow;
+            }
+            #Project_Link
+            {
+                color: rgb(50, 194, 112);
+                transition: linear 0.6s;
+                
+            }
+            #Project_Link:hover
+            {
+                transition: linear 0.6s;
+                color: springgreen;
+            }
+            #Project_Contact
+            {
+                color: rgb(50, 194, 112);
+                transition: linear 0.6s;
+                
+            }
+            #Project_Contact:hover
+            {
+                transition: linear 0.6s;
+                color: rgb(50, 194, 112);
+            }
+            
+            ::-webkit-scrollbar
+            {
+                width: 20px;
+                background-color: black;
+            }
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: #303036;
+            }
+            ::-webkit-scrollbar
+            {
+                width: 20px;
+                background-color: #303036;
+                
+            }
+            ::-webkit-scrollbar-thumb
+            {
+                background: linear-gradient(rgb(251, 255, 0), rgb(102, 255, 0));
+                border-radius: 10px;
+                
+            }
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+        <meta charset='UTF-8'>
+        <meta name='viewport', content='width=device-width', initial-scale=1>
+        <title> My Projects</title>
+        <body>
+            <div class='background'>
+                <nav class='navbar navbar-expand-sm navbar-dark'>
+                    <a class='navbar-brand', href='Index.html'> Home</a>
+                    <button class='navbar-toggler' type='button' data-toggle='collapse', data-target='#Collapser'>
+                        <span class='navbar-toggler-icon'></span>
+                    </button>
+                    
+                    <div class='collapse navbar-collapse', id='Collapser'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='nav-item'>
+                                <a class='nav-link' href='contact.HTML'> Contact me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class='ProjectOne'>
+                   <a href='https://github.com/GoofyGalaxy374/WebStore-FrontEnd'><img srcset='static/project.svg'></a>
+                   <p style='color:white; font-size: 20px'>An online store front-end</p>
+                </div>
+                <div class='ProjectTwo'>
+                    <a href='https://github.com/GoofyGalaxy374/A-book-catalogue'><img srcset='static/project.svg'></a>
+                    <p style='color:white; font-size: 20px'>A book "tinder"</p>
+                 </div>
+                 <div class='ProjectThree'>
+                    <a href='https://github.com/GoofyGalaxy374/ToDo-App'><img srcset='static/project.svg'></a>
+                    <p style='color:white; font-size: 20px'>A To-Do List manager</p>
+                    
+                 </div>
+            
+                 
+            </div>
+            <div class='footer'>
+                <div class='row'>
+                    <div class='footer-content col-sm-5'>
+                        <h1 style='color:greenyellow'>Martin<span style='color:white;'> Yordanov</span></h1>
+                        <p>I am a passionate front-end web developer. 
+                            That is the reason I spend numerous days engulfed by code and designing websites. 
+                            I absolutely love doing it! It is amazing! It's my passion ever since I was a little kid-How does software work?
+                            Especially-Games and Websites? So I learnt how to program games and design websites.
+                         </p>
+                            <p><a href='https:github.com/GoofyGalaxy374?tab=repositories', id='Github_Links'><i class='fa fa-lg fa-github'> Check my Github out</i></a></p>
+                            
+            
+                        </div>
+                        <div class='footer-links col-sm-6'>
+                            <h1 style='color:springgreen'>About<span style='color:turquoise;'> Me </span></h1>
+                            <p>I've been interested in how software works ever since I was a child. 
+                                It is a passion of mine, especially web design. It's fascinating!! 
+                                I've taught myself how to write code at the age of 12 and ever since then
+                                that is all I do and I don't regret it at all!</p>
+                            <p><a href='contact.html', id='Project_Contact'><i class='fa fa-lg fa-phone'> Go to the contact me page</i></a></p>
+                            <p>Icons made by <a href="https://www.flaticon.com/free-icon/project-management_1087927" class="Credits">dDara</a> from <a href="https://www.flaticon.com/" class="Credits"> www.flaticon.com</a></p>
+            
+                
+                        </div>
+                   
+                </div>
+                <div class='footer-bottom'>
+                    <br>
+                    &copy; Designed by Martin Yordanov
+                </div>
+        </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    </head>
+</html>
+
+
+

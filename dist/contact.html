@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <head>
+        <style>
+            body, html
+            {
+                width: 100%;
+                height: 100%;
+            }
+            .nav-link:hover
+            {
+                box-shadow: 0px 2px 0px  #888888;
+                transition: linear 0.6s;
+            }
+            .navbar-brand:hover
+            {
+                box-shadow: 0px 2px 0px white;
+                transition: linear 0.6s;
+            }
+            .bg
+            {
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('static/Background_1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: absolute;
+                height: 100%;
+            }
+            .hero-image
+            {
+                background-image:linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
+                height: 50%;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 120px;
+                background-position: center;
+            }
+            .hero-text
+            {
+                text-align: center;
+                color: white;
+                position: relative;
+                top:20%;      
+            }
+            .footer
+            {
+                background-color: #303036;
+                width: 100%;
+                position: absolute;
+                overflow: hidden;
+                
+            }
+            .footer-content{
+                color:white;
+                margin-top: 10px;
+                margin-left: 25px;
+            }
+            .footer-about{
+                color:white;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            .footer-bottom{
+                background-color: gray;
+                text-align: center;
+                color: white;
+                font-style:italic;
+                height: auto;
+            }
+            .footer-links
+            {
+                color:white;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            #Github_Links
+            {
+                color: orange;
+                transition: linear 0.6s;
+            }
+            #Github_Links:hover
+            {
+                transition: linear 0.6s;
+                color: yellow;
+            }
+            #Project_Link
+            {
+                color: rgb(50, 194, 112);
+                transition: linear 0.6s;
+                
+            }
+            #Project_Link:hover
+            {
+                transition: linear 0.6s;
+                color: springgreen;
+            }
+            ::-webkit-scrollbar
+            {
+                width: 20px;
+                background-color: #303036;
+                
+            }
+            ::-webkit-scrollbar-thumb
+            {
+                background: linear-gradient(rgb(251, 255, 0), rgb(102, 255, 0));
+                border-radius: 10px;
+                
+            }
+    
+        </style>
+
+        <meta charset='UTF-8'>
+        <meta name='viewport', content='width=device-width', initial-scale=1>
+        <title> Contacts </title>
+
+    </head>
+    <body>
+        <div class='bg'>
+            <nav class='navbar navbar-expand-sm navbar-dark '>
+                <a class='navbar-brand', href='Index.html'>Home</a>
+                <button class='navbar-toggler' type='button' data-toggle='collapse', data-target='#CollapseButton'>
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+        
+                <div class='collapse navbar-collapse', id='CollapseButton'>
+                    <ul class='navbar-nav ml-auto'>
+                        <li class='nav-item'>
+                            <a class='nav-link', href='projects.html'>My Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class='hero-image'>
+                <div class='hero-text'>
+                    <h1> Interested in what I can offer?</h1>
+                    
+                    <h2> Send me an email at <span style='color:orange;'>buzzfrontend360@gmail.com</span></h2>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class='footer'>
+            <div class='row'>
+                <div class='footer-content col-sm-5'>
+                    <h1 style='color:greenyellow'>Martin<span style='color:white;'> Yordanov</span></h1>
+                    <p>I am a passionate front-end web developer. 
+                        That is the reason I spend numerous days engulfed by code and designing websites. 
+                        I absolutely love doing it! It is amazing! It's my passion ever since I was a little kid-How does software work?
+                        Especially-Games and Websites? So I learnt how to program games and design websites.
+                     </p>
+                        <p><a href='https:github.com/GoofyGalaxy374?tab=repositories', id='Github_Links'><i class='fa fa-lg fa-github'> Check my Github out</i></a></p>
+                        
+        
+                    </div>
+                    <div class='footer-links col-sm-6'>
+                        <h1 style='color:greenyellow'>About<span style='color:white;'> Me </span></h1>
+                        <p>I've been interested in how software works ever since I was a child. 
+                            It is a passion of mine, especially web design. It's fascinating!! 
+                            I've taught myself how to write code at the age of 12 and ever since then
+                            that is all I do and I don't regret it at all!</p>
+                        <p><a href='projects.html', id='Project_Link'><i class='fa fa-lg fa-rocket'> Go to my projects page</i></a></p>
+            
+                    </div>
+               
+            </div>
+            <div class='footer-bottom'>
+                &copy; Designed by Martin Yordanov
+            </div>
+            
+        </div>  
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</html>
+
+

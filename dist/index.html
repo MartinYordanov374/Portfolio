@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <meta charset='UTF-8'>
+        <meta name='viewport', content='width=device-width', initial-scale=1>
+        <style>
+            body, html{
+                height:100%;
+                width: 100%;
+            }
+            .bg_One{
+                background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('static/Background_1.jpg');
+                height: 100%;
+                background-position: absolute;
+                background-repeat: none;
+                background-size: cover;
+            }
+            .hero-image
+            {
+                background-image:linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
+                height: 50%;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 120px;
+                background-position: center;
+            }
+            .hero-text
+            {
+                text-align: center;
+                color: white;
+                position: relative;
+                top:20%;
+            }
+        
+            .nav-link:hover
+            {
+                transition: linear 0.6s;
+                box-shadow: 0px 2px 0px 0px;
+                
+            }
+            .navbar-brand:hover
+            {
+                transition: 0.65s;
+                box-shadow: 0px 2px 0px 0px #888888; /* Offset - Left Right Bottom Blur, Spread, color*/
+            }
+            .footer
+            {
+                background-color: #303036;
+                width: 100%;
+                position: absolute;
+                overflow: hidden;
+                
+            }
+            .footer-content{
+                color:white;
+                margin-top: 10px;
+                margin-left: 25px;
+            }
+            .footer-about{
+                color:white;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            .footer-bottom{
+                background-color: gray;
+                text-align: center;
+                color: white;
+                font-style:italic;
+                height: auto;
+            }
+            .footer-links
+            {
+                color:white;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            #Github_Links
+            {
+                color: orange;
+                transition: linear 0.6s;
+                
+            }
+            #Github_Links:hover
+            {
+                transition: linear 0.6s;
+                color: yellow;
+            }
+            #Project_Link
+            {
+                color: rgb(50, 194, 112);
+                transition: linear 0.6s;
+                
+            }
+            #Project_Link:hover
+            {
+                transition: linear 0.6s;
+                color: springgreen;
+            }
+            #Project_Contact
+            {
+                color: rgb(50, 194, 112);
+                transition: linear 0.6s;
+                
+            }
+            #Project_Contact:hover
+            {
+                transition: linear 0.6s;
+                color: springgreen;
+            }
+            ::-webkit-scrollbar
+            {
+                width: 20px;
+                background-color: #303036;
+        
+            }
+            ::-webkit-scrollbar-thumb
+            {
+                background: linear-gradient(rgb(251, 255, 0), rgb(102, 255, 0));
+                border-radius: 10px;
+              
+                
+            }
+        
+        
+        
+        
+        </style>
+        <title> My Portfolio</title>
+        <body>
+            <div class='bg_One'>
+                <nav class='navbar  navbar-expand-sm navbar-dark'>
+                    <a class='navbar-brand navbar-disabled' href='index.html'>My Portfolio</a>
+                    <button class="navbar-toggler", type="button", data-toggle="collapse", data-target="#NavbarCollapse">
+                        <span class='navbar-toggler-icon'></span>
+                    </button>
+                    <div class='collapse navbar-collapse' id='NavbarCollapse'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='nav-item'>
+                                <a class='nav-link', href='projects.html'>My Projects</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a class='nav-link', href='contact.html'>Contact me</a>
+                            </li>
+                        </ul> 
+                    </div>      
+                </nav>
+                <div class='hero-image' >
+                    <div class='hero-text'>
+                        <h1>I am a python developer</h1> 
+                        <h4>I have a passion for web design</h4>
+                        <a href='https:github.com/GoofyGalaxy374?tab=repositories'><button class='btn btn-success ' style='border-top-left-radius: 12px;border-bottom-left-radius: 12px;border-top-right-radius: 12px;border-bottom-right-radius: 12px;'><i class='fa fa-github'> Check my Github out</i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class='footer'>
+                <div class='row'>
+                    <div class='footer-content col-sm-5'>
+                        <h1 style='color:greenyellow'>Martin<span style='color:white;'> Yordanov</span></h1>
+                        <p>I am a passionate front-end web developer. 
+                            That is the reason I spend numerous days engulfed by code and designing websites. 
+                            I absolutely love doing it! It is amazing! It's my passion ever since I was a little kid-How does software work?
+                            Especially-Games and Websites? So I learnt how to program games and design websites.
+                         </p>
+                            <p><a href='https:github.com/GoofyGalaxy374?tab=repositories', id='Github_Links'><i class='fa fa-lg fa-github'> Check my Github out</i></a></p>
+                            
+            
+                        </div>
+                        <div class='footer-links col-sm-6'>
+                            <h1 style='color:greenyellow'>About<span style='color:white;'> Me </span></h1>
+                            <p>I've been interested in how software works ever since I was a child. 
+                                It is a passion of mine, especially web design. It's fascinating!! 
+                                I've taught myself how to write code at the age of 12 and ever since then
+                                that is all I do and I don't regret it at all!</p>
+                            <p><a href='projects.html', id='Project_Link'><i class='fa fa-lg fa-rocket'> Go to my projects page</i></a></p>
+                            <p><a href='contact.html', id='Project_Contact'><i class='fa fa-lg fa-phone'> Go to the contact page</i></a></p>
+                
+                        </div>
+                   
+                </div>
+                <div class='footer-bottom'>
+                    &copy; Designed by Martin Yordanov
+                </div>
+        </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    </head>
+</html>
