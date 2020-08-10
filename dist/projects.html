@@ -34,13 +34,13 @@
             } 
             .Projects
             {
-                display: grid;
-                grid-template-columns: repeat(3, 20%);
-                margin-left: 110px;
+                display: grid;  
+                grid-gap: 5px;  
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-rows: repeat(2, 100px);  
             }
             .ProjectOne{
                opacity: 0.9;
-                margin-top: 150px;
                 transition: 0.7s;
             }
             .ProjectOne:hover{
@@ -52,7 +52,6 @@
             .ProjectTwo{
 
                opacity: 0.9;
-                margin-top: 150px;
                 transition: 0.7s;
             }
             .ProjectTwo:hover{
@@ -65,7 +64,6 @@
             .ProjectThree{
 
                opacity: 0.9;
-                margin-top: 150px;
                 transition: 0.7s;
             }
             .ProjectThree:hover{
