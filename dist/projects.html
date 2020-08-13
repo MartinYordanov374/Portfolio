@@ -11,15 +11,14 @@
             {
                margin: 0px; 
                padding: 0px;
-                
             }
             .background
             {
                 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('static/Background_1.jpg');
-                height: 100%;
+                height: auto;
                 width: 100%;
                 background-position: absolute;
-                background-repeat: none;
+                background-repeat: repeat-y; 
                 background-size: cover;
             }
             .nav-link:hover
@@ -34,62 +33,69 @@
             } 
             .row
             {
+                position: relative;
                 float: left;
             }
-            .Projects
-            {
-                
-                margin-left: 190px;
 
-            }
             .ProjectOne
             {
-                
-                opacity: 1;
-                transition: 0.7s;
-
+                margin-left: 40px;
+                margin-right: 40px;
+                opacity: 0.9;
+                transition: ease 0.7s;
             }
             .ProjectOne:hover{
+                margin-left: 20px;
+                margin-right: 20px;
                 opacity: 1;
-                box-shadow: 0px 0px 100px 50px red;
-                transition: 0.7s;
+                box-shadow: 0px 0px 100px 50px blue;
+                transition: ease 0.7s;
             }
             .ProjectTwo{
-
-                opacity: 1;
-                transition: 0.7s;
+                margin-left: 40px;
+                margin-right: 40px;
+                opacity: 0.8;
+                transition: ease 0.7s;
             }
             .ProjectTwo:hover{
+                margin-left: 20px;
+                margin-right: 20px;
                 opacity: 1;
-                transition: 0.7s;
+                transition: ease 0.7s;
                 box-shadow: 0px 0px 100px 50px green;
             }
           
             .ProjectThree{
-                opacity: 1;
-                transition: 0.7s;
+                margin-left: 40px;
+                margin-right: 40px;
+                opacity: 0.8;
+                transition: ease 0.7s;
             }
             .ProjectThree:hover{
+                margin-left: 20px;
+                margin-right: 20px;
                 opacity: 1;
-                transition: 0.7s;
-                box-shadow: 0px 0px 100px 50px blue;
-                transition: 0.7s;
+                transition: ease 0.7s;
+                box-shadow: 0px 0px 100px 50px cyan;
                 }
             .ProjectFour{
-                opacity: 1;
-                transition: 0.7s;
+                margin-left: 40px;
+                margin-right: 40px;
+                opacity: 0.8;
+                transition: ease 0.7s;
             }
             .ProjectFour:hover{
+                margin-left: 20px;
+                margin-right: 20px;
                 opacity: 1;
-                box-shadow: 0px 0px 100px 50px rgb(153, 0, 153);
-                transition: 0.7s;
+                box-shadow: 0px 0px 100px 50px orange;
+                transition: ease 0.7s;
                 }
-            
+                
             .footer
             {
                 background-color: #303036;
                 width: 100%;
-                position: absolute;
                 overflow: hidden;
                 
             }
@@ -207,36 +213,23 @@
                     </div>
                 </nav>
                 <div class='Projects'>
-                    <div class='row'>
-                        <div class=' ProjectOne col-sm-10 col-md-10 col-lg-10'>
-                            <a href='https://github.com/GoofyGalaxy374/WebStore-FrontEnd'><img srcset='static/project.svg'></a>
-                            <p style='color:white; font-size: 20px'>An online store front-end</p>
-                        </div>
+                    <div class='ProjectOne jumbotron bg-primary'>
+                        <h1 style='text-align: center;'>A chat-room</h1>
                     </div>
-                    <div class="row">
-                        <div class=' ProjectTwo col-sm-10 col-md-10 col-lg-10'>
-                            <a href='https://github.com/GoofyGalaxy374/A-book-catalogue'><img srcset='static/project.svg'></a>
-                            <p style='color:white; font-size: 20px'>A book "tinder"</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class=' ProjectThree col-sm-10 col-md-10 col-lg-10'>
-                            <a href='https://github.com/GoofyGalaxy374/ToDo-App'><img srcset='static/project.svg'></a>
-                            <p style='color:white; font-size: 20px'>A To-Do List manager</p>
-                        </div>
-                    </div>
-                   <div class="row">
-                        <div class=' ProjectFour col-sm-10 col-md-10 col-lg-10'>
-                            <a href='https://github.com/GoofyGalaxy374/Chat-Room'><img srcset='static/project.svg'></a>
-                            <p style='color:white; font-size: 20px'>A ChatRoom website</p>
-                        </div>
-                    </div>
-                    </div>                    
+                    <div class='ProjectTwo jumbotron bg-success'>
+                        <h1 style='text-align: center;'>A webstore front-end</h1>
+                    </div>  
+                    <div class='ProjectThree jumbotron bg-info'>
+                        <h1 style='text-align: center;'>A ToDo list</h1>
+                    </div>  
+                    <div class='ProjectFour jumbotron bg-warning'>
+                        <h1 style='text-align: center;'>A Book Tinder</h1>
+                    </div>                
                 </div>
                 
             
                  
-            </div>
+            
             <div class='footer'>
                 <div class='row'>
                     <div class='footer-content col-sm-5'>
@@ -267,6 +260,7 @@
                     <br>
                     &copy; Designed by Martin Yordanov
                 </div>
+            </div>
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
